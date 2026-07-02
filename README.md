@@ -1,41 +1,59 @@
 <h1 align="center">🔖 Bookmarker</h1>
 
 <p align="center">
-Save, organize and visit your favorite websites with ease.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white">
+  A simple and responsive web application to save, organize, visit, and manage your favorite websites.
 </p>
 
 ---
 
 ## ✨ Features
 
-- 🔖 Add new bookmarks
-- 🌍 Visit saved websites
+- ➕ Add new bookmarks
+- 🌐 Visit saved websites
 - 🗑️ Delete bookmarks
-- ✅ Regex validation
+- ✅ Validate user input using Regex
+- 💾 Save bookmarks using Local Storage
+- 📱 Fully Responsive Design
+- 🎨 Clean and Modern UI
+- 🍬 SweetAlert2 for beautiful notifications
+
+---
+
+## 🛠️ Built With
+
+- 🌐 HTML5
+- 🎨 CSS3
+- 🅱️ Bootstrap 5
+- ⚡ JavaScript (ES6)
 - 💾 Local Storage
-- 📱 Responsive Design
+- 🎭 Font Awesome
+- 🍬 SweetAlert2
 
 ---
 
 ## 📸 Preview
 
 <p align="center">
-<img src="./preview.png" width="900">
+  <img src="./preview.png" alt="Bookmarker Preview" width="900">
 </p>
 
 ---
 
 ## 🚀 Live Demo
 
-🌐 **Netlify:**  
-https://your-link.netlify.app
+🔗 **Live Demo:** https://your-demo-link.vercel.app
 
-📂 **Repository:**  
-https://github.com/Rahma-Hagag/bookmark
+---
+
+## 📂 GitHub Repository
+
+🔗 https://github.com/Rahma-Hagag/bookmark
+
+---
+
+## 👩‍💻 Author
+
+**Rahma Hagag**
+
+⭐ If you like this project, don't forget to give it a star!
+
