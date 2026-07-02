@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+<section class="container">
+    <div>
+        <!--######################################## Header ########################-->
+        <div class="text-center p-4">
+            <h1 class="head position-relative">Bookmarker</h1>
+        </div>
+           <div class="dashed my-3"></div>
+
+        <div class="elklam d-flex align-items-center justify-content-center p-3 fw-bold fs-3 ">
+            <h2 class="my-5 fw-bold fs-3">
+          <i class="fa-solid fa-bookmark color"></i> Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark color"></i>
+        </h2>
+        </div>
+        <!--####################################################start inputs-------------------------------------------------------------->
+        <div> 
+            <!--input num1-->
+            <div class="mb-3 fs-6 ">
+           <label for="siteNameInput1" class="form-label">
+           <i class="fa-solid fa-book-bookmark"></i> Site Name
+           </label>
+           <input oninput="validate(/^[a-zA-Z0-9 ]{3,}$/, this.value,nameAlert,this)" type="text" class="form-control" id="siteNameInput1" placeholder="Bookmark Name">
+           
+           <div id="nameAlert" class="text-danger d-none">Name must be 3-20 letters only.</div>
+          
+           </div>
+           <!--end input num1-->
+
+           <!--start input num2-->
+           <div class="mb-3 fs-6 ">
+           <label for="siteUrlInput2" class="form-label">
+            <i class="fa-solid fa-link"></i> Site URL
+           </label>
+           
+           <input oninput="validate(/^(https?:\/\/)(www\.)?[a-zA-Z0-9\-]+\.[a-z]{2,}(\/\S*)?$/,this.value,urlAlert,this)" type="text" class="form-control" id="siteUrlInput2" placeholder="Website URL">
+           
+           <div id="urlAlert" class="text-danger d-none">Please enter a valid URL.</div>
+           </div>
+           <!--end input num2-->
+
+          <!--Submit button-->
+          <div class="d-flex justify-content-center mt-4">
+            <button  id="addBtn" class="btn myBtn px-5 text-light" type="button"> Submit </button>
+          </div>
+          <div class="dashed my-4"></div>
+        </div>
+        <!---------------------------------------end inputs##########################################################################-->
+    </div>
+    <div>
+        <table class="table">
+        <thead>
+       <tr>
+       <th scope="col">index</th>
+       <th scope="col">Website Name</th>
+       <th scope="col">Visit</th>
+       <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody id="rowData">
+    <!-- Products will display here -->
+  </tbody>
+</table>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

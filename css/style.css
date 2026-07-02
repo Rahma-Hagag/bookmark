@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(250, 240, 227);
+}
+
+.dashed {
+  border-bottom: 1px dashed #352e28;
+}
+
+
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 ,p ,label , button {
+  font-family: "Righteous" ,cursive;
+}
+
+.head h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  left: 50%;
+  bottom: 0px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+  transform: translate(-50%);
+}
+
+.head:hover::before {
+  height: 100%;
+  cursor: pointer;
+}
+
+.elklam h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(90deg,rgba(63, 165, 91, 1) 0%,  rgb(254, 245, 124) 100%);
+    background-clip:text ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.myBtn {
+  background-color: #d74f2a !important;
+}
+
+.myBtn:hover {
+  background-color: #d7451d !important;
+}
